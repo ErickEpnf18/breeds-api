@@ -16,7 +16,8 @@ app.get("/api/breeds", (req, res) => {
       // res.send(breeds.find((b) => b.name === query.search) || []); // not found return []
       res.send(search.search(query.search)); // search start with the letter or word
     }
-    res.send(breeds.map((b) => ({ loco: b })));
+    // res.send(breeds.map((b) => ({ nameBreed: b })));
+    res.send(breeds);
   } catch (error) {
     console.error(error.message);
     res.send(error.message);
@@ -24,7 +25,9 @@ app.get("/api/breeds", (req, res) => {
 });
 
 app.get("/api/breeds/:id", (req, res) => {
-  const { params: {id} } = req;
+  const {
+    params: { id },
+  } = req;
   res.send(breeds[id]);
 });
 
