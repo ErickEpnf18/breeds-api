@@ -3,6 +3,7 @@
 ## Routes
 > ### GET /api/breeds
 > ### GET /api/breeds/:id
+> ### GET /api/breeds?search=<wordname>
 
 ## Useful commands
 ```console
