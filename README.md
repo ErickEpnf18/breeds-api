@@ -17,4 +17,4 @@ foo@bar:~$ vercel
 
 ### I am @ErickEpnf18
 
-Have a octotastic day!:) ✨
+Have a octotastic day!:) ✨⚡️
