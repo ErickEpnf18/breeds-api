@@ -8,7 +8,7 @@ const search = new JsSearch.Search("name"); // it which fields it should index f
 search.addDocuments(breeds); // add objs for the search
 search.addIndex("name"); // index for searching
 
-app.get(process.env.path, (req, res) => {
+app.get(process.env.API_BREEDS, (req, res) => {
   const { query } = req;
 
   try {
